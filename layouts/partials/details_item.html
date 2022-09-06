@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="img">
+        {{ if isset .value "icon" }}
+            {{ .value.icon | safeHTML }}
+        {{ end }}
+    </div>
+    <span name="{{ .key }}" class="value">
+        {{ if eq .value.type "text" }}
+            {{ .value.value }}
+        {{ else if eq .value.type "email" }}
+            <a href="mailto: {{ .value.value }}">{{ .value.value }}</a>
+        {{ else if eq .value.type "phone" }}
+            <a href="tel: {{ .value.value }}">{{ .value.value }}</a>
+        {{ else if eq .value.type "link" }}
+            <a href="{{ .value.to }}">{{ .value.value }}</a>
+        {{ end }}
+    </span>
+</div>

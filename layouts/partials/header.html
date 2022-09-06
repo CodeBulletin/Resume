@@ -1,0 +1,18 @@
+{{- $data := site.Data.content -}}
+<header>
+    <div class="name">
+        <h1 class="fname" name="first_name">
+            {{ $data.firstname }}
+        </h1>
+        {{ if isset $data "lastname" }}
+            <h2 class="lname" name="last_name">
+                {{ $data.lastname }}
+            </h2>
+        {{ end }}
+    </div>
+    <div class="contact-details">
+        {{ range $key, $value := $data.details }}
+            {{ partial "details_item" (dict "context" . "key" $key "value" $value) }}
+        {{ end }}
+    </div>
+</header>

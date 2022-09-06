@@ -1,0 +1,19 @@
+{{- $data := site.Data.content -}}
+
+{{ $options := (dict "includePaths" (slice "assets/scss")) }}
+{{- $sass := resources.Get "scss/index.scss" -}}
+{{- $css := $sass | resources.ToCSS $options -}}
+
+{{ $js := resources.Get "js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ $data.Title }}</title>
+
+{{- if isset $data "Favicon" -}}
+    <link rel="shortcut icon" href={{ $data.Favicon }} type="image/x-icon">
+{{- end -}}
+
+<link rel="stylesheet" href="{{ $css.Permalink }}">
+<script defer src="{{ $js.Permalink }}"></script>

@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    .name {
+        padding: 1cm;
+        .fname {
+            font-size: 5rem;
+            margin: 0;
+            padding: 0;
+            line-height: 4.5rem;
+            color: var(--header-text);
+        }
+        .lname {
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+            line-height: 2rem;
+            color: var(--header-text);
+        }
+    }
+    .contact-details {
+        padding: 1cm;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.2cm;
+    }
+}
+
+.print_theme {
+    header {
+        border-bottom: 2px solid var(--border) !important;
+    }
+}

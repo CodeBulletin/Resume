@@ -1,0 +1,21 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    .left {
+        width: 65%;
+    }
+    .right {
+        flex-grow: 1;
+        background-color: var(--body-left);
+    }
+}
+
+.print_theme {
+    .body {
+        .left {
+            border-right: 2px solid var(--border);
+        }
+    }
+}

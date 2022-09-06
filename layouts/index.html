@@ -1,0 +1,15 @@
+{{- $data := site.Data.content -}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{- partial "head.html" -}}
+    </head>
+    <body>
+        <main>
+            {{- partial "header.html" -}}
+            {{- partial "body.html" -}}
+        </main>
+
+        {{- partial "floating_button.html" (dict "context" . "light" $data.constants.light_img "dark" $data.constants.dark_img "print" $data.constants.printer_img "classes" "theme" ) -}}
+    </body>
+</html>

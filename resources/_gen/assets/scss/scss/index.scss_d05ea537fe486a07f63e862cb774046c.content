@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0 0; }
+
+main {
+  width: 210mm;
+  height: 297mm;
+  margin: auto;
+  box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2); }
+
+@media screen and (min-width: 220mm) {
+  body {
+    margin: 0;
+    padding: 3em 0; } }
+
+@use 'components/floating_button';
