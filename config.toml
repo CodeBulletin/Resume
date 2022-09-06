@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 assetDir = "/assets"
+baseURL = "https://codebulletin.github.io/Resume"
