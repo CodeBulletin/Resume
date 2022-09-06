@@ -36,8 +36,8 @@
     },
 
     "constants": {
-        "light_img": "imgs/printer.svg",
-        "dark_img": "imgs/sun.svg",
-        "printer_img": "imgs/moon.svg"
+        "light_img": "/imgs/printer.svg",
+        "dark_img": "/imgs/sun.svg",
+        "printer_img": "/imgs/moon.svg"
     }
 }

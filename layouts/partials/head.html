@@ -1,10 +1,10 @@
 {{- $data := site.Data.content -}}
 
 {{ $options := (dict "includePaths" (slice "assets/scss")) }}
-{{- $sass := resources.Get "scss/index.scss" -}}
+{{- $sass := resources.Get "/scss/index.scss" -}}
 {{- $css := $sass | resources.ToCSS $options -}}
 
-{{ $js := resources.Get "js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
+{{ $js := resources.Get "/js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
