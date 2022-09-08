@@ -1,0 +1,29 @@
+{{ if eq .body.type "headlist" }}
+    <ul name="{{ .name }}" class="r-body">
+        {{ range .body.list }}
+            <li><b>{{.head}}:</b> {{.value}}</li>
+        {{ end }}
+    </ul>
+{{ else if eq .body.type "itemlist" }}
+    <ul class="r-body" name="{{ .name }}">
+        {{ range .body.list }}
+            <li>
+                <div class="itemlist" name="{{ .id }}">
+                    <h1>{{ .h1 }}</h1>
+                    <h2>{{ .h2 }}</h2>
+                    <h3>{{ .h3 }}</h3>
+                    <i>{{ .span }}</i>
+                    {{ if .opt }}
+                        <br><i>{{ .opt }}</i>
+                    {{ end }}
+                </div>
+            </li>
+        {{ end }}
+    </ul>
+{{ else if eq .body.type "list" }}
+    <ul class="r-body" name="{{ .name }}">
+        {{ range $value := .body.list }}
+            <li>{{ $value | safeHTML }}</li>
+        {{ end }}
+    </ul>
+{{ end }}

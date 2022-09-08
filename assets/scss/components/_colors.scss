@@ -3,7 +3,9 @@
     --paper-bg: white;
     --header-background: #9fddd3;
     --header-text: #000;
-    --body-left: #eaf7f5;
+    --body-right: #eaf7f5;
+    --body-right-tag: #01172F;
+    --body-right-text: #e6e7e8;
     
     --button-color: #fff;
 }
@@ -13,7 +15,9 @@
     --paper-bg: #202020;
     --header-background: #303030;
     --header-text: #e6e7e8;
-    --body-left: #f6b64c;
+    --body-right: #f6b64c;
+    --body-right-tag: #202020;
+    --body-right-text: #e6e7e8;
 
     --button-color: #303030;
 }
@@ -22,7 +26,10 @@
     --header-background: #fff;
     --header-text: #000;
     --border: #909090;
-    --body-left: #fff;
+    --body-right: #fff;
+    --body-right-text: white;
+    --body-right-tag: white;
+    --body-right-text: black;
 
     --button-color: #fff;
 }

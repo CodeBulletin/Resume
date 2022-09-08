@@ -12,7 +12,7 @@
 <title>{{ $data.Title }}</title>
 
 {{- if isset $data "Favicon" -}}
-    <link rel="shortcut icon" href={{ $data.Favicon }} type="image/x-icon">
+    <link rel="shortcut icon" href="{{ $data.Favicon }}" type="image/x-icon">
 {{- end -}}
 
 <link rel="stylesheet" href="{{ $css.Permalink }}">

@@ -1,0 +1,16 @@
+{{- $data := index site.Data.content "right-content" -}}
+{{ range $data }}
+    <div class="r-heading" name="{{ .head }}">
+        <div class="righthead">
+            <div class="line">
+            </div>
+            <h1>
+                {{ if isset . "icon" }}
+                    {{ .icon | safeHTML }} 
+                {{ end }}   
+                {{ .head }}
+            </h1>
+        </div>
+        {{ partial "rightbody.html" (dict "body" .body "name" .head) }}
+    </div>
+{{ end }}
