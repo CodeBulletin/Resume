@@ -1,0 +1,16 @@
+{{- $data := index site.Data.content "left-content" -}}
+{{ range $data }}
+    <div class="l-heading" name="{{ .title }}">
+        <div class="lefthead">
+            <div class="line">
+            </div>
+            <h1>
+                {{/*  {{ if isset . "icon" }}
+                    {{ .icon | safeHTML }} 
+                {{ end }}     */}}
+                {{ .title }}
+            </h1>
+        </div>
+        {{ partial "leftbody.html" (dict "type" .type "data" .data "name" .title) }}
+    </div>
+{{ end }}

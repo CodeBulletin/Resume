@@ -1,0 +1,24 @@
+.l-heading {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1cm;
+
+    .lefthead {
+        h1 {
+            svg {
+                fill: var(--body-left-text);
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+    p {
+        font-size: 1.05rem;
+        margin-top: 0;
+    }
+
+    * {
+        color: var(--body-left-text);
+    }
+}

@@ -1,11 +1,11 @@
 {{ if eq .body.type "headlist" }}
-    <ul name="{{ .name }}" class="r-body">
+    <ul name="{{ .name }}" class="r-body r-headlist">
         {{ range .body.list }}
             <li><b>{{.head}}:</b> {{.value}}</li>
         {{ end }}
     </ul>
 {{ else if eq .body.type "itemlist" }}
-    <ul class="r-body" name="{{ .name }}">
+    <ul class="r-body r-itemlist" name="{{ .name }}">
         {{ range .body.list }}
             <li>
                 <div class="itemlist" name="{{ .id }}">
@@ -21,7 +21,7 @@
         {{ end }}
     </ul>
 {{ else if eq .body.type "list" }}
-    <ul class="r-body" name="{{ .name }}">
+    <ul class="r-body r-list" name="{{ .name }}">
         {{ range $value := .body.list }}
             <li>{{ $value | safeHTML }}</li>
         {{ end }}
