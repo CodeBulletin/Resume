@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --body-bg: #e0e0e0;
   --paper-bg: white;
@@ -56,13 +57,17 @@
     padding: 0 !important;
     margin: 0 !important; }
 
+html {
+  font-size: 14.8px; }
+
 body {
   margin: 0;
   padding: 3em 0;
   background-color: var(--body-bg);
   font-family: serif;
   -ms-overflow-style: none;
-  scrollbar-width: none; }
+  scrollbar-width: none;
+  font-family: 'Inter', sans-serif; }
   body::-webkit-scrollbar {
     display: none; }
 
@@ -70,6 +75,8 @@ body {
   display: flex; }
 
 main {
+  min-width: 210mm;
+  min-height: 297mm;
   width: 210mm;
   height: 297mm;
   margin: auto;
@@ -119,6 +126,7 @@ main {
   position: fixed;
   top: 0rem;
   right: 0%;
+  z-index: 5;
   cursor: pointer;
   outline: none;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
