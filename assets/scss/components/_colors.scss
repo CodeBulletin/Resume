@@ -13,6 +13,8 @@
     --body-left-head: #e6e7e8;
     --body-left-text: black;
     --body-left-underscore: #0000;
+    --skill-tag: #cae6fe;
+    --skill-text: black;
     
     --button-color: #fff;
 }
@@ -33,6 +35,9 @@
     --body-left-text: #e6e7e8;
     --body-left-underscore: #e6e7e8;
 
+    --skill-tag: #f15c5e;
+    --skill-text: white;
+
     --button-color: #303030;
 }
 
@@ -51,10 +56,25 @@
     --body-left-head: black;
     --body-left-text: black;
     --body-left-underscore: black;
-
+    
     --button-color: #fff;
+    --skill-tag: #0000;
+    --skill-text: #000;
 
     .noprint {
         display: none !important;
+    }
+
+    .circle {
+        &::before {
+            background-color: #0000 !important;
+        }
+    }
+
+    .skills-tag {
+        div {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
     }
 }

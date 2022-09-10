@@ -1,3 +1,41 @@
 {{ if eq .type "paragraph" }}
     <p>{{ .data | safeHTML  }}</p>
+{{ else if eq .type "html" }}
+    <div class="html">
+        {{ range .data }}
+            <div name="{{ .company }}" class="jobs">
+                <h3> {{ .company }} </h3>
+                <div class="content">
+                    <div class="vertical-line noprint"></div>
+                    {{ range .positions }}
+                        {{ partial "job_positions.html" (dict "context" .) }}
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+{{ else if eq .type "list" }}
+    <div class="html">
+        <div name="{{ .name }}" class="projects">
+            <div class="content">
+                <div class="vertical-line noprint"></div>
+                <div class="project">
+                    {{ range .data }}
+                    <div class="projectname">
+                        <div class="poshead">
+                            <h2>{{ .name }}</h2>
+                            <div class="circle"></div>
+                        </div>
+                        <span>Github: <a href="{{ .link }}">{{ .value }}</a></span>
+                        <div class="skills-tag" name="skills">
+                            {{ range $i := .skills }}
+                                <div> {{ $i }} </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
 {{ end }}

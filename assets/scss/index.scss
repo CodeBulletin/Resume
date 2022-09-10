@@ -6,7 +6,13 @@ body {
 
     background-color: var(--body-bg);
     font-family: serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
+
 .theme {
     display: flex;
 }
@@ -32,11 +38,15 @@ main {
     }
 }
 
-@import 'components/header';
-@import 'components/body';
 @import 'components/details_item';
 @import 'components/floating_button';
 @import 'components/itemlist';
+@import 'components/jobs';
+@import 'components/projects';
+
+
+@import 'components/header';
+@import 'components/body';
 @import 'components/lefthead';
 @import 'components/leftheadings';
 @import 'components/righthead';

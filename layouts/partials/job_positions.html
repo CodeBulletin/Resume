@@ -1,0 +1,18 @@
+<div class="jobposition">
+    <div class="details">
+        <div class="poshead">
+            <h2>{{ .context.position }}</h2>
+            <div class="circle"></div>
+        </div>
+        <div class="typeof">
+            <h4> {{ .context.type }} </h4>
+            <h4> {{ .context.time }} </h4>
+        </div>
+        <span> {{ .context.address }} </span>
+        <div class="skills-tag" name="skills">
+            {{ range $i := .context.skills }}
+                <div> {{ $i }} </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

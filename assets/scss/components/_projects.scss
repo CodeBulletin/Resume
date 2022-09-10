@@ -1,0 +1,60 @@
+.projects {
+    margin-top: 1rem;
+    .vertical-line {
+        background-color: var(--body-left-text);
+    }
+    .content {
+        position: relative;
+        .vertical-line {
+            background-color: var(--body-left-text);
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            margin-left: 2rem;
+            .projectname {
+                width: 100%;
+                .poshead {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .circle {
+                        width: 0.75rem;
+                        height: 0.75rem;
+                        transform: translateX((-1rem - (0.75rem / 2)));
+                        background-color: var(--body-left-text);
+                        &:before {
+                            background-color: var(--paper-bg);
+                        }
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 1.5rem;
+                    }
+                }
+                span {
+                    font-size: 0.8rem;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .skills-tag {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    column-gap: 0.5rem;
+                    row-gap: 0.3rem;
+                    margin-top: 0.1rem;
+                    div {
+                        padding: 0.2rem 0.4rem;
+                        border-radius: 1rem;
+                        background-color: var(--skill-tag);
+                        color: var(--skill-text) !important;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

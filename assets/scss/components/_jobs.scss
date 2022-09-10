@@ -1,0 +1,67 @@
+.jobs {
+    margin-top: 1rem;
+    h3 {
+        margin: 0;
+    }
+    .content {
+        margin-top: 0.5rem;
+        position: relative;
+        .vertical-line {
+            background-color: var(--body-left-text);
+        }
+        .jobposition {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            .details {
+                width: 100%;
+                .poshead {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    h2 {
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+                    .circle {
+                        width: 0.75rem;
+                        height: 0.75rem;
+                        transform: translateX((-1rem - (0.75rem / 2)));
+                        background-color: var(--body-left-text);
+                        &:before {
+                            background-color: var(--paper-bg);
+                        }
+                    }
+                }
+                .typeof {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 2rem;
+                    justify-content: space-between;
+                    h4 {
+                        margin: 0;
+                        font-size: 1.1rem;
+                    }
+                }
+                .skills-tag {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    column-gap: 0.5rem;
+                    margin-top: 0.1rem;
+                    div {
+                        padding: 0.2rem 0.4rem;
+                        border-radius: 1rem;
+                        background-color: var(--skill-tag);
+                        color: var(--skill-text) !important;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .jobposition:first-child {
+            margin-top: 0;
+        }
+    }
+}

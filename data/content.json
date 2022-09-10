@@ -26,18 +26,99 @@
             "value": "https://codebulletin.github.io",
             "to":  "https://codebulletin.github.io/",
             "icon": "<svg xmlns='http://www.w3.org/2000/svg'   viewBox='0 0 24 24' fill='none' class='stroke' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-link'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path></svg>"
+        },
+        "linkedin": {
+            "type": "link",
+            "value": "@Bhavesh Malhotra",
+            "to":  "https://www.linkedin.com/in/bhavesh-malhotra-a5a875157",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-linkedin fill' viewBox='0 0 16 16'><path d='M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z'/></svg>"
         }
     },
     "left-content": [
         {
             "title": "Summary",
             "type": "paragraph",
-            "data": "A result orented <b> data science / full stack / android developer </b> with <b>3 + 2 years </b> computer science degree and <b>1+ year</b> of experience in the industry. Specializing in designing custom software solutions and driving new feature development. Adept at defining user requirements and driving scalability for customers."
+            "data": "A result orented <b> data science / full stack / android developer </b> with <b>3 + 2 years </b> computer science degree and almost <b>1 year</b> of experience in the industry. Specializing in designing custom software solutions and driving new feature development. Adept at defining user requirements and driving scalability for customers."
         },
         {
             "title": "Experience",
-            "type": "paragraph",
-            "data": ""
+            "type": "html",
+            "data": [
+                {
+                    "company": "Analyticsradar",
+                    "positions": [
+                        {
+                            "position": "Backend Engineering Intern",
+                            "type": "Internship",
+                            "time": "Jan 2021 - Jun 2021",
+                            "address": "New Delhi, Delhi, India",
+                            "skills": [
+                                "Django",
+                                "Python",
+                                "MySql",
+                                "OpenCV"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "company": "Capitava",
+                    "positions": [
+                        {
+                            "position": "Data Anaylist",
+                            "type": "Full Time",
+                            "time": "Jul 2020 - Nov 2020",
+                            "address": "New Delhi, Delhi, India",
+                            "skills": [
+                                "OpenCV",
+                                "Tensorflow",
+                                "Pillow",
+                                "Python"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Projects",
+            "type": "list",
+            "data": [
+                {
+                    "name": "My Portfolio",
+                    "link": "https://github.com/CodeBulletin/MyPortfolio",
+                    "value": "github.com/codebulletin/myresume",
+                    "skills": [
+                        "Web Devlopment",
+                        "HTML",
+                        "SCSS",
+                        "JavaScript",
+                        "Webpack"
+                    ]
+                },
+                {
+                    "name": "Neural Network Library",
+                    "link": "https://github.com/CodeBulletin/ML_Library",
+                    "value": "github.com/CodeBulletin/ML_Library",
+                    "skills": [
+                        "Neural Networks",
+                        "Numpy",
+                        "Python",
+                        "Machine Learning"
+                    ]
+                },
+                {
+                    "name": "Multi Neighbourhood CA",
+                    "link": "https://github.com/CodeBulletin/Multi-Neighbourhood-CA",
+                    "value": "github.com/CodeBulletin/Multi-Neighbourhood-CA",
+                    "skills": [
+                        "Microbiological Simulation",
+                        "C++",
+                        "SFML",
+                        "GLSL"
+                    ]
+                }
+            ]
         }
     ],
     "right-content": [
@@ -97,7 +178,7 @@
                 "type": "list",
                 "list": [
                     "<b>2nd Rank</b> in OutCode Competiton",
-                    "<b>100+</b> Leetcode questions solved",
+                    "<b>100+</b> <a href='https://leetcode.com/bmalhotra736/'>Leetcode</a> questions solved",
                     "<b>65+</b> Respositories in <a href='https://github.com/CodeBulletin'>Github</a>",
                     "NIMCET <b>AIR 1440</b> 2022 for masters",
                     "<b>Rank 1</b> in 4th semeseter in bachelors",
