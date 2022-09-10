@@ -1,4 +1,4 @@
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 assetDir = "/assets"
-# baseURL = ""
+baseURL = "./"
