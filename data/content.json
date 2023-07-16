@@ -4,6 +4,7 @@
 
     "firstname": "Bhavesh",
     "lastname": "Malhotra",
+    "profile_img": "./imgs/photo.jpg",
 
     "details": {
         "address": {
@@ -36,64 +37,34 @@
     },
     "left-content": [
         {
-            "title": "Summary",
+            "title": "Career Objective",
             "type": "paragraph",
-            "data": "A result orented <b> data science / full stack / android developer </b> with <b>3 + 2 years </b> computer science degree and almost <b>1 year</b> of experience in the industry. Specializing in designing custom software solutions and driving new feature development. Adept at defining user requirements and driving scalability for customers."
-        },
-        {
-            "title": "Experience",
-            "type": "html",
-            "data": [
-                {
-                    "company": "Analyticsradar",
-                    "positions": [
-                        {
-                            "position": "Backend Engineering Intern",
-                            "type": "Internship",
-                            "time": "Jan 2021 - Jun 2021",
-                            "address": "New Delhi, Delhi, India",
-                            "skills": [
-                                "Django",
-                                "Python",
-                                "MySql",
-                                "OpenCV"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "company": "Capitava",
-                    "positions": [
-                        {
-                            "position": "Data Anaylist",
-                            "type": "Full Time",
-                            "time": "Jul 2020 - Nov 2020",
-                            "address": "New Delhi, Delhi, India",
-                            "skills": [
-                                "OpenCV",
-                                "Tensorflow",
-                                "Pillow",
-                                "Python"
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "data": "My career objective in computer science is to contribute to innovative projects and continuously learn and apply my expertise in <b>software development, AI, and web development</b>. I aim to make meaningful contributions while fostering personal growth and professional excellence."
         },
         {
             "title": "Projects",
             "type": "list",
             "data": [
                 {
-                    "name": "My Portfolio",
-                    "link": "https://github.com/CodeBulletin/MyPortfolio",
-                    "value": "github.com/codebulletin/myresume",
+                    "name": "Speech to text using deep learning",
                     "skills": [
-                        "Web Devlopment",
-                        "HTML",
-                        "SCSS",
-                        "JavaScript",
-                        "Webpack"
+                        "Deep Learning",
+                        "Python",
+                        "Tensorflow",
+                        "RNNs",
+                        "WIP"
+                    ]
+                },
+                {
+                    "name": "Logic Simulator",
+                    "link": "https://github.com/CodeBulletin/LambdaLogic",
+                    "value": "github.com/CodeBulletin/LambdaLogic",
+                    "skills": [
+                        "Logic Gates Simulator",
+                        "C++",
+                        "SFML",
+                        "ImGUI",
+                        "WIP"
                     ]
                 },
                 {
@@ -117,6 +88,49 @@
                         "SFML",
                         "GLSL"
                     ]
+                },
+                {
+                    "name": "Maze Game",
+                    "link": "https://github.com/CodeBulletin/Maze.Exe",
+                    "value": "github.com/CodeBulletin/Maze.Exe",
+                    "skills": [
+                        "Maze Game / Generator",
+                        "C++",
+                        "SFML"
+                    ]
+                },
+                {
+                    "name": "AI Snake Game Simulator",
+                    "link": "https://github.com/CodeBulletin/AI-Snake",
+                    "value": "github.com/CodeBulletin/AI-Snake",
+                    "skills": [
+                        "AI Snake Game",
+                        "C++",
+                        "SFML",
+                        "WIP"
+                    ]
+                },
+                {
+                    "name": "Online Book Store",
+                    "link": "https://github.com/CodeBulletin/Online-Book-Store",
+                    "value": "github.com/CodeBulletin/Online-Book-Store",
+                    "skills": [
+                        "LAMP Stack",
+                        "PHP",
+                        "MySQL",
+                        "HTML",
+                        "CSS",
+                        "Javascript"
+                    ]
+                }, 
+                {
+                    "name": "Super Shapes 3D",
+                    "link": "https://github.com/CodeBulletin/SuperShape3D",
+                    "value": "github.com/CodeBulletin/SuperShape3D",
+                    "skills": [
+                        "Processing",
+                        "Java"
+                    ]
                 }
             ]
         }
@@ -129,19 +143,19 @@
                 "list": [
                     {
                         "head": "Programming Languages",
-                        "value": "C++, Python, Javascript, Java, C#, Rust, PHP, Bash Script, Dart, C, R"
+                        "value": "C++, Python, Javascript (Basic), Java, Rust, PHP, Bash Script, C"
                     },
                     {
-                        "head": "Frameworks",
-                        "value": "React, Node, Express, Tensorflow, React-native, Flutter, SFML, Tailwind, Bootstrap, NEXT.js"
+                        "head": "Frameworks/Libraries",
+                        "value": "Tensorflow, Node, Express, SFML"
                     },
                     {
-                        "head": "Database/CICD/Cloud",
-                        "value": "MySQL, MongoDB, SQLite, Redis, Jenkins, Docker, Kubernetes, AWS, Azure, Firebase, Heroku"
+                        "head": "Database/Cloud",
+                        "value": "MySQL, Redis, Docker, Kubernetes, Heroku"
                     },
                     {
                         "head": "Tools",
-                        "value": "Visual Studio, PyCharm, InteliJ, VS Code, GIT, Figma, Photoshop"
+                        "value": "Visual Studio, PyCharm, InteliJ, VS Code, GIT, Figma"
                     }
                 ]
             },
@@ -158,7 +172,8 @@
                         "h1": "Masters of Computer Application",
                         "h2": "GGSIPU (Indraprastha University)",
                         "h3": "Bharti Vidhyapeeth",
-                        "span": "Delhi, Sept 2022 - June 2024"
+                        "span": "Delhi, Oct 2022 - July 2024",
+                        "opt": "Marks(first sem): 7.964 SGPA"
                     },
                     {
                         "id": "bachelors",
@@ -178,11 +193,12 @@
                 "type": "list",
                 "list": [
                     "<b>2nd Rank</b> in OutCode Competiton",
-                    "<b>100+</b> <a href='https://leetcode.com/bmalhotra736/'>Leetcode</a> questions solved",
-                    "<b>65+</b> Respositories in <a href='https://github.com/CodeBulletin'>Github</a>",
+                    "<b>200+</b> <a href='https://leetcode.com/bmalhotra736/'>Leetcode</a> questions solved",
+                    "<b>70+</b> Respositories in <a href='https://github.com/CodeBulletin'>Github</a>",
                     "NIMCET <b>AIR 1440</b> 2022 for masters",
                     "<b>Rank 1</b> in 4th semeseter in bachelors",
-                    "<b>40+</b> Anime watched"
+                    "<b>45+</b> Anime watched",
+                    "<b>Online summer training</b> from Internshala with <b>98%</b> score"
                 ]
             },
             "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='noprint' viewBox='0 0 576 512'><path d='M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H357.9C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z'/></svg>"
@@ -192,10 +208,12 @@
             "body": {
                 "type": "list",
                 "list": [
-                    "<b>Programming</b>",
+                    "<b>Programming</b> in free time",
                     "Playing <b>Video Games</b>",
                     "Watching <b>Anime</b>",
-                    "Playing <b>Chess</b>"
+                    "Playing <b>Chess</b>",
+                    "Creating <b>Home Server</b>",
+                    "Reading <b>Manga</b>"
                 ]
             },
             "icon": "<?xml version='1.0' encoding='UTF-8' standalone='no'?> <svg id='Layer_1' class='noprint' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><path class='cls-1' d='M92.41665,40.0391a14.25573,14.25573,0,0,1,10.49179.211l-10.493-28.2765L64.52109,22.32474A14.31354,14.31354,0,1,0,44.6884,29.68436L16.4238,40.17293,26.81772,68.18245a14.31354,14.31354,0,1,0,7.48,20.15716l10.32543,27.825,28.26389-10.48831a14.31354,14.31354,0,1,0,19.83412-7.36015l27.89365-10.35092-10.42454-28.092A14.31279,14.31279,0,1,1,92.41665,40.0391Z'/></svg>"

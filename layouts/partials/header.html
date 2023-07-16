@@ -1,5 +1,10 @@
 {{- $data := site.Data.content -}}
 <header>
+    <div class="ProfileImage noprint">
+        {{ if isset $data "profile_img" }}
+            <img class="profile_img" src="{{ $data.profile_img }}" alt="Profile Image">
+        {{ end }}
+    </div>
     <div class="name">
         <h1 class="fname" name="first_name">
             {{ $data.firstname }}

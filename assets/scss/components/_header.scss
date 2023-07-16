@@ -3,8 +3,22 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--header-background);
+    .ProfileImage {
+        width: 2.5cm;
+        padding-left: 0.5cm;
+        
+        display: flex;
+        .profile_img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10%;
+            border: 0.2cm solid var(--profile-border);
+        }
+    }
     .name {
         padding: 1cm;
+        padding-left: 0cm;
         .fname {
             font-size: 4rem;
             margin: 0;
@@ -31,5 +45,8 @@ header {
 .print_theme {
     header {
         border-bottom: 2px solid var(--border) !important;
+        .name {
+            padding-left: 1cm;
+        }
     }
 }

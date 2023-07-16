@@ -26,7 +26,9 @@
                             <h2>{{ .name }}</h2>
                             <div class="circle"></div>
                         </div>
-                        <span>Github: <a href="{{ .link }}">{{ .value }}</a></span>
+                        {{ if .link }}
+                            <span>Github: <a href="{{ .link }}">{{ .value }}</a></span>
+                        {{ end }}
                         <div class="skills-tag" name="skills">
                             {{ range $i := .skills }}
                                 <div> {{ $i }} </div>

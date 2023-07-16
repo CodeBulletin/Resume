@@ -20,9 +20,9 @@
                     align-items: center;
                     position: relative;
                     .circle {
-                        width: 0.75rem;
-                        height: 0.75rem;
-                        transform: translateX((-1rem - (0.75rem / 2)));
+                        width: 1rem;
+                        height: 1rem;
+                        transform: translateX((-1rem - 0.5rem));
                         background-color: var(--body-left-text);
                         &:before {
                             background-color: var(--paper-bg);

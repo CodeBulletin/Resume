@@ -2,6 +2,7 @@
 
 {{ $options := (dict "includePaths" (slice "assets/scss")) }}
 {{- $sass := resources.Get "/scss/index.scss" -}}
+
 {{- $css := $sass | resources.ToCSS $options -}}
 
 {{ $js := resources.Get "/js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
@@ -15,5 +16,5 @@
     <link rel="shortcut icon" href="{{ $data.Favicon }}" type="image/x-icon">
 {{- end -}}
 
-<link rel="stylesheet" href=".{{ $css.Permalink }}">
-<script defer src=".{{ $js.Permalink }}"></script>
+<link rel="stylesheet" href="{{ $css.Permalink }}">
+<script defer src="{{ $js.Permalink }}"></script>
